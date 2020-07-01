@@ -85,8 +85,7 @@ a {
 	background: #d9e4ea;
 	padding: 2em 0;
 	margin-top: 30px;
-} */
-
+}
 /* ---- Page Elements ---- */
 
 .logo {
@@ -109,6 +108,20 @@ a {
 	.tagline {
 		font-size: 1.4em;
 	}
+	.main-header {
+        display: flex;
+	}
+	.main-nav {
+		display: flex;
+		justify-content: center;
+	}
+    .main-header{
+       flex-direction: column;
+       align-items: center;
+	}
+	.primary {
+		padding: 20psx;
+	}
 }
 @media (min-width: 1025px) {
 	.main-header,
@@ -116,10 +129,14 @@ a {
 		width: 80%;
 		max-width: 1150px;
 	}
-}
 	.main-header{
-	flex-direction: row-reverse;
-}
-.primary {
-	flex: 2;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+		justify-content: space-between;
+		padding-top: 40px;
+    }
 }
