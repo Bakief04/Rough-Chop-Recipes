@@ -94,6 +94,9 @@ a {
 .headline {
 	margin-bottom: 0;
 }
+h2 {
+	background-color: lightblue;
+}
 
 /* ================================= 
   Media Queries
@@ -138,5 +141,12 @@ a {
         flex-direction: row;
 		justify-content: space-between;
 		padding-top: 40px;
-    }
+	}
+	.main-footer {
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+	}
+	
 }
