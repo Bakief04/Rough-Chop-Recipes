@@ -37,7 +37,9 @@ a {
   Base Layout Styles
 ==================================== */
 
-/* navigation bar styles */
+.heading {
+	text-align: center;
+}
 
 .name {
 	margin: 0;
@@ -137,11 +139,12 @@ h2 {
         justify-content: space-between;
     }
     .row {
-        display: flex;
-        flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 30px;
 		padding-top: 40px;
 	}
+
 	.main-footer {
 		position: fixed;
 		bottom: 0px;
@@ -149,4 +152,4 @@ h2 {
 		width: 100%;
 	}
 	
-}
+	}
