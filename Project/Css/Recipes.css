@@ -14,6 +14,7 @@ body,
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 p {
 	font-size: .95em;
@@ -24,12 +25,19 @@ h3,
 a {
 	color: #093a58;
 }
+h2 {
+	text-align: center;
+}
 h2,
 h3 {
 	margin-top: 0;
 }
 a {
 	text-decoration: none;
+}
+input {
+	width: 100%;
+	padding: 10px;
 }
 
 /* Base Layouts */
@@ -63,12 +71,17 @@ a {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
 }
 .banner{
 	text-align: center;
 }
-.main-footer {
-	text-align: center;
+.main-nav {
+	display: flex;
+	flex-direction: row;
 }
 .banner {
 	color: #fff;
@@ -83,7 +96,19 @@ a {
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
-	margin-top: 30px;
+	text-align: center;
+
+}
+.row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 2rem;
+	padding-top: 40px;
+	width: 80%;
+	max-width: 1150px;
+	margin: 0 auto;
+
 }
 /* ---- Page Elements ---- */
 
@@ -98,50 +123,38 @@ h2 {
 }
 
 /* Media Queries */
-
-@media (min-width: 769px) {
-	.main-header,
-	.row {
-		width: 90%;
-		margin: 0 auto;
-	}
-	.tagline {
-		font-size: 1.4em;
+@media (max-width: 769px) {
+	
+	.name {
+		display: flex;
+		flex-wrap: nowrap;
+	}	
+	.main-nav {
+		flex-direction: column;
 	}
 	.main-header {
-        display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
-	.main-nav {
+	.row {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
 	}
-    .main-header{
-		display: flex;
-       flex-direction: column;
-       align-items: center;
-	}
-@media (min-width: 1025px) {
-		.main-header,
-		.row {
-			width: 80%;
-			max-width: 1150px;
-		}
-		.main-header{
-			flex-direction: row;
-			justify-content: space-between;
-		}
-		.row {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr;
-			grid-gap: 1rem;
-			padding-top: 40px;
-		}
+	.main-footer {
+		margin-top: 50px;
+		width: auto;
+	}	
+}
 
-		.main-footer {
+@media(min-width: 1025px) {
+	h2 {
+		border-radius: 10px;
+		text-align: center;
+	}
+			.main-footer {
 			position: fixed;
 			bottom: 0px;
 			left: 0px;
 			width: 100%;
 		}
-	}
+}
