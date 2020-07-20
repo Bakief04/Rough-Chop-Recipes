@@ -138,10 +138,20 @@ h2 {
 	}	
 	.main-nav {
 		flex-direction: column;
+
+	}
+	.main-nav li {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: solid black 2px;
+		width: 100%;
+		padding: 20px;
+		flex: 1 1 100%;
+
 	}
 	.main-header {
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
 	}
 	.row {
 		display: flex;
@@ -158,7 +168,7 @@ h2 {
 		border-radius: 10px;
 		text-align: center;
 	}
-			.main-footer {
+	.main-footer {
 			position: fixed;
 			bottom: 0px;
 			left: 0px;
