@@ -1,5 +1,4 @@
 /* Base Styles */
-
 * {
 	box-sizing: border-box;
 }
@@ -133,22 +132,28 @@ h2 {
 @media (max-width: 769px) {
 	
 	.name {
-		display: flex;
+		display: inline-flex;
 		flex-wrap: nowrap;
 	}	
 	.main-nav {
+		display: none;
+	}
+	.main-nav.toggleCls {
+		display: block;
+	}
+	/* .main-nav {
 		flex-direction: column;
 
 	}
 	.main-nav li {
 		margin-top: 10px;
 		margin-bottom: 10px;
-		border: solid black 2px;
+		border: solid black;
 		width: 100%;
 		padding: 20px;
 		flex: 1 1 100%;
-
-	}
+		font-size: 20px;
+	} */
 	.main-header {
 		flex-direction: column;
 		align-items: left;
@@ -163,7 +168,7 @@ h2 {
 	}	
 }
 
-@media(min-width: 1025px) {
+@media(min-width: 770px) {
 	h2 {
 		border-radius: 10px;
 		text-align: center;
@@ -173,5 +178,8 @@ h2 {
 			bottom: 0px;
 			left: 0px;
 			width: 100%;
+		}
+		.hamIcon {
+			display: none;
 		}
 }
