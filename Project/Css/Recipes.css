@@ -9,7 +9,9 @@ body,
 	line-height: 1.6;
 	color: #3a3a3a;
 	margin: 0;
-	background-color: #ACEDFF;
+}
+body {
+	background-color: #AFD3F0;
 }
 
 img {
@@ -27,14 +29,15 @@ p {
 	font-size: .95em;
 	margin-bottom: 1.8em;
 }
-h2,
 h3,
 a {
 	color: #093a58;
-	background-color: d9e4ea;
 }
 h2 {
 	text-align: center;
+	background-color: #5D707F;
+	color: white;
+
 }
 h2,
 h3 {
@@ -52,6 +55,7 @@ input {
 
 .heading {
 	text-align: center;
+	color: #07004D;
 }
 
 .name {
@@ -126,21 +130,29 @@ input {
 .headline {
 	margin-bottom: 0;
 }
-h2 {
-	background-color: lightblue;
-}
 
 /* Media Queries */
 
 @media (max-width: 769px) {
 	
 	.name {
-		display: inline-flex;
-		flex-wrap: nowrap;
+		float: right;
+		width: 70%;
+		padding-top: 20px;;
 	}
 
 	.main-nav {
 		display: none;
+	}
+
+	.main-nav li {
+		padding: 20px;
+		background-color: white;
+		border: solid grey 2px;
+	}
+	.main-nav a {
+		display: list-items;
+		width: 100%;
 	}
 
 	.main-nav.toggleCls {
@@ -148,9 +160,8 @@ h2 {
 	}
 
 	.hamIcon {
-		float: right;
-        margin-right: 0;
-        margin-left: 15px;
+		float: left;
+        width: 20%;
 	}
 
 	.main-header {

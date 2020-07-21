@@ -1,4 +1,4 @@
-
+// hamburger menu
 function toggleClass() {
     let menu = document.querySelector(".main-nav");
     menu.classList.toggle("toggleCls");
