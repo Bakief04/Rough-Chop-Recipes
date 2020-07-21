@@ -2,6 +2,7 @@
 * {
 	box-sizing: border-box;
 }
+
 body,
 .main-header {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -10,6 +11,7 @@ body,
 	margin: 0;
 	background-color: #ACEDFF;
 }
+
 img {
 		width: 100%;
 		max-width: 400px;
@@ -72,7 +74,7 @@ input {
 	color: #9c3737;
 }
 
-/* ---- Layout Containers ---- */
+/* Layout Containers */
 
 .main-header {
 	padding-top: .5em;
@@ -116,7 +118,7 @@ input {
 	margin: 0 auto;
 
 }
-/* ---- Page Elements ---- */
+/* Page Elements */
 
 .logo {
 	width: 190px;
@@ -129,34 +131,31 @@ h2 {
 }
 
 /* Media Queries */
+
 @media (max-width: 769px) {
 	
 	.name {
 		display: inline-flex;
 		flex-wrap: nowrap;
-	}	
+	}
+
 	.main-nav {
 		display: none;
 	}
+
 	.main-nav.toggleCls {
 		display: block;
 	}
-	/* .main-nav {
-		flex-direction: column;
 
+	.hamIcon {
+		float: right;
+        margin-right: 0;
+        margin-left: 15px;
 	}
-	.main-nav li {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		border: solid black;
-		width: 100%;
-		padding: 20px;
-		flex: 1 1 100%;
-		font-size: 20px;
-	} */
+
 	.main-header {
 		flex-direction: column;
-		align-items: left;
+		align-items: right;
 	}
 	.row {
 		display: flex;
@@ -173,6 +172,14 @@ h2 {
 		border-radius: 10px;
 		text-align: center;
 	}
+	
+
+	/* maybe utilize background color */
+
+	.main-header {
+		background-color: white;
+	}
+
 	.main-footer {
 			position: fixed;
 			bottom: 0px;
