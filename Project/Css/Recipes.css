@@ -16,9 +16,18 @@ body {
 
 img {
 		width: 100%;
-		max-width: 400px;
 		height: auto;
 }
+.image img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	width: 95%;
+	height: 300px;
+	border: solid #5D707F 2px;
+}
+
  ul {
   margin: 0;
   padding: 0;
@@ -77,29 +86,23 @@ input {
 .main-nav a:hover {
 	color: #9c3737;
 }
+.form {
+	margin-top: 70px;
+}
 
 /* Layout Containers */
 
 .main-header {
 	padding-top: .5em;
-	padding-bottom: .5em;
+	padding-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	
 }
-.banner{
-	text-align: center;
-}
 .main-nav {
 	display: flex;
 	flex-direction: row;
-}
-.banner {
-	color: #fff;
-	background: rgb(67, 111, 206);
-	padding: 3.2em 0;
-
 }
 .col {
 	padding-right: 1em;
@@ -140,7 +143,13 @@ input {
 		width: 70%;
 		padding-top: 20px;;
 	}
-
+	.image img {
+		width: 100%;
+		height: auto;
+	}
+	.heading {
+		padding-top: 10px;
+	}
 	.main-nav {
 		display: none;
 	}
@@ -168,6 +177,7 @@ input {
 	.main-header {
 		flex-direction: column;
 		align-items: right;
+		font-size: 3vw;
 	}
 	.row {
 		display: flex;
@@ -184,10 +194,6 @@ input {
 		border-radius: 10px;
 		text-align: center;
 	}
-	
-
-	/* maybe utilize background color */
-
 	.main-header {
 		background-color: white;
 	}
