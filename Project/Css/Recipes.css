@@ -153,6 +153,7 @@ input {
 	.main-nav a {
 		display: list-items;
 		width: 100%;
+		font-size: 25px;
 	}
 
 	.main-nav.toggleCls {
