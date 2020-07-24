@@ -4,10 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rough Chop Recipes</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css\recipes.css">
+	<link rel="stylesheet" type="text/css" href="css\recipes.css">
 </head>
 
-<body>
+<body>>
 	<div class="container"> <!-- body container -->
 	<header class="main-header">
 	<div class = "test">
@@ -35,7 +35,7 @@
 		<h1>Featured Recipes</h1>
 	</div>
 
-	<div class="row"> <!-- grid items -->
+	<div class="grid"> <!-- grid items -->
 		<div class="primary">
 			<h2>Chocolate Chip Cookies</h2>
 			<img src="images\cookies.jpg" alt="Chocolate Chip Cookies">
@@ -81,17 +81,34 @@
 				tristique risus nec. Viverra mauris in aliquam sem fringilla ut morbi. Quis</p>		
 			</div>
 			<div class="sixth">
-				<h2>Subscribe for more Recipes</h2>
-				<h3>If you would like to stay up to date with the latest recipes, you can join our mailing list so you never miss a recipe.</h3>
-				<div class ="form">
-				<form>
-					<label for="fname">Email</label><br>
-					<input type="text" id="fname" name="fname" value=""><br>
-					<label for="lname">Name</label><br>
-					<input type="text" id="lname" name="lname" value=""><br><br>
-					<input type="submit" value="Submit">
-				  </form> 
-				</div>
+					<div class="row">
+						<h2>Weight Converter</h2>
+						<form>
+						  <div class="form-group">
+							<input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Ounces...">
+						  </div>
+						</form>
+						<div id="output">
+							<div class="convert">
+							<div class="cups">
+							  <h4>Ounces:</h4>
+							  <div id="ozOutput"></div>
+							</div>
+
+							<div class="grams">
+							  <h4>grams:</h4>
+							  <div id="gramsOutput"></div>
+							</div>
+				  
+						  <div class="card card-danger mb-2">
+							  <div class="cups">
+							  <h4>Cups:</h4>
+							  <div id="cupsOutput"></div>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
 			</div>
 	</div>
 	

@@ -63,11 +63,14 @@ h3 {
 a {
 	text-decoration: none;
 }
-input {
+input{
 	width: 100%;
 	padding: 10px;
+	margin-bottom: 10px;
 }
-
+.convert {
+	padding-left: 20px;
+}
 																														/* Base Layouts */
 
 .heading {
@@ -94,7 +97,7 @@ input {
 .main-nav a:hover {
 	color: #9c3737;
 }
-.form {
+.mail {
 	margin-top: 70px;
 }
 
@@ -122,7 +125,7 @@ input {
 	text-align: center;
 
 }
-.row {
+.grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);;
@@ -186,7 +189,7 @@ input {
 		align-items: right;
 		font-size: 3vw;
 	}
-	.row {
+	.grid {
 		display: flex;
 		flex-direction: column;
 	}
