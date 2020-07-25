@@ -1,4 +1,4 @@
-																													/* Base Styles */
+																																																	/* Base Styles */
 * {
 	box-sizing: border-box;
 }
@@ -104,8 +104,6 @@ input{
 /* Layout Containers */
 
 .main-header {
-	padding-top: .5em;
-	padding-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -165,9 +163,9 @@ input{
 	}
 
 	.main-nav li {
-		padding: 20px;
+		padding: 10px;
 		background-color: white;
-		border: solid grey 2px;
+		border: solid grey 1px;
 	}
 	.main-nav a {
 		display: list-items;
@@ -211,12 +209,12 @@ input{
 	.main-footer {
 		display: grid;
 		grid-template-rows: 1fr;
-			/*position: fixed;
-			bottom: 0px;
-			left: 0px;
-			width: 100%; */
+
 		}
 		.hamIcon {
 			display: none;
 		}
+	.main-nav li:not(:last-child) { 
+		border-right:solid 1px 
+	}
 }
