@@ -1,4 +1,4 @@
-																																																	/* Base Styles */
+																						/* Base Styles */
 * {
 	box-sizing: border-box;
 }
@@ -71,7 +71,7 @@ input{
 .convert {
 	padding-left: 20px;
 }
-																														/* Base Layouts */
+																														/* Base Layout styles */
 
 .heading {
 	text-align: center;
@@ -101,7 +101,7 @@ input{
 	margin-top: 70px;
 }
 
-/* Layout Containers */
+																															/* Layout Containers */
 
 .main-header {
 	display: flex;
@@ -133,8 +133,6 @@ input{
 	margin: 0 auto;
 
 }
-																																/* Page Elements */
-
 .logo {
 	width: 190px;
 }
