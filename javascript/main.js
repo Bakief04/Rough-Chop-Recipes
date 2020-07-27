@@ -27,7 +27,7 @@ function showSlides() {
 
 //Weight Conversions
 document.getElementById("output").style.visibility = "hidden";
-document.getElementById("lbsInput").addEventListener("input", function(e) {
+document.getElementById("input").addEventListener("input", function(e) {
 document.getElementById("output").style.visibility = "visible";
 
 let oz = e.target.value;
