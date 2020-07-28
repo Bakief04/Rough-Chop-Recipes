@@ -1,7 +1,6 @@
 //Carousel
 function showSlides(n) {
   var i;
-  var slideshow = document.getElementsByClassName("slideshow");
   if (n > slideshow.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slideshow.length}
   for (i = 0; i < slideshow.length; i++) {
